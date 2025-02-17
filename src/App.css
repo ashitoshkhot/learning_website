@@ -1,0 +1,734 @@
+.gallery-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Title of the gallery */
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flexbox grid for the gallery items */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 60px;
+  justify-items: center;
+}
+
+/* Each gallery item */
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling */
+.gallery-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Information inside each gallery item */
+.gallery-info {
+  padding: 15px;
+}
+
+.gallery-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gallery-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* FEATURES PAGE */
+
+.features-container {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+
+.features-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Grid layout for the feature cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Feature card styling */
+.feature-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Feature image */
+.feature-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Title inside each feature card */
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Description inside each feature card */
+.feature-description {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Slider Container */
+.slick-slider {
+  margin-bottom: 40px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.service-icon img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Service Options (Bottom section) */
+.service-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.service-option {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.service-option:hover {
+  background-color: #0056b3;
+}
+
+.service-option h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Slick Pagination */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0056b3;
+}
+
+/* Slick Arrows */
+.slick-prev, .slick-next {
+  font-size: 30px;
+  color: #333;
+  z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 2rem;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-icon img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .service-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-option {
+    margin-bottom: 10px;
+  }
+}
+/* PrivacyPolicy.css */
+.privacy-policy-container {
+  padding: 30px;
+  padding-top: 100px; 
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #2980b9;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-top: 1.2rem;
+}
+
+p, ul {
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.privacy-policy-container {
+  background-color: #f4f6f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+}
+/* App.css किंवा PrivacyPolicy.css मध्ये */
+.privacy-policy-container {
+  padding-top: 80px;  
+}
+
+body {
+  margin: 0;
+}
+/* Container for the entire blog */
+.blog-container {
+  padding: 20px;
+}
+
+/* Container for the entire blog */
+.blog-container {
+  padding: 20px;
+}
+
+/* Top Blog Section */
+.top-blog {
+  margin-bottom: 40px;
+}
+
+.top-blog-item {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay to improve text visibility */
+}
+
+.top-blog h3 {
+  font-size: 24px;
+  color: #ffffff; /* Change title color to white */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for better contrast */
+}
+
+.top-blog p {
+  font-size: 18px;
+  color: #f1f1f1; /* Lighter color for readability */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for better contrast */
+}
+
+.top-blog-item:hover {
+  opacity: 0.8;
+}
+
+/* Blog List Section */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.blog-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-item h3 {
+  font-size: 20px;
+  color: #333333; /* Change blog item title color */
+}
+
+.blog-item p {
+  font-size: 16px;
+  color: #555555; /* Change blog item content color */
+}
+
+.read-more {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+/* General App Layout */
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Container for the certificate */
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 100px; 
+  background-color: #f4f4f4;
+}
+
+/* Certificate Card Styles */
+.certificate-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+  border: 5px solid #28a745; /* Green border */
+}
+
+/* Certificate Header */
+.certificate-header h1 {
+  font-size: 36px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+/* Certificate Body */
+.certificate-body h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.certificate-body .learner-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+.certificate-body .course-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
+
+.certificate-body .completion-date {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Certificate Footer */
+.certificate-footer .signature {
+  font-size: 18px;
+  color: #333;
+  font-style: italic;
+  margin-top: 40px;
+  border-top: 2px solid #333;
+  padding-top: 10px;
+}
+
+/* Print Button */
+.print-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.print-btn:hover {
+  background-color: #218838;
+}
+
+/* Navabr Css  */
+.hero{
+  width: 100%;
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F0BB78;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 0; 
+  
+}
+
+.logo{
+  width: 190px;
+  cursor: pointer;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 30px;
+  font-size: 16px;
+  margin-bottom: 0%;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #585756;
+}
+
+nav ul li a:hover{
+  color: #800000;
+}
+
+
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aligns dropdown below the parent */
+  left: 0;
+  background-color: black; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  border-radius: 4px;
+   min-width: 150px; 
+   --bs-dropdown-min-width: 6rem !important;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0; 
+}
+
+
+
+.dropdown-menu li a {
+  color: #585756;
+  background-color: #F0BB78;
+  text-decoration: none;
+  margin: 0%;
+  display: block;
+  padding: 4px 8px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #F0BB78;
+  border-radius: 6px;
+
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  padding: 0;
+}
+
+
+.contact-btn {
+  display: inline-block;
+  width: 80px; 
+  padding: 8px 12px; 
+  background-color: #960303; 
+  color: white; 
+  text-decoration: none;
+  font-size: 14px; 
+  font-weight: bold;
+  border-radius: 8px; 
+  margin-right: 20px; 
+  margin-bottom: 0%;
+}
+.contact-btn:hover {
+  background-color: #A52A2A;
+  border-color: #FFF0DC; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+/* footer css */
+
+
+footer{
+  background-color: #F0BB78;
+   border-radius: 10px; 
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 50px 25px 15px ;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav{
+  margin: 30px 0;
+  font-size:12px;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a{
+  color:#585756;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1.5;
+  color: #800000;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.footerBottom p{
+  height: 20px;
+  color: #D9EAFD;
+  font-size: 16px;
+}
+.designer{
+  font-size: large;
+  color:white;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
