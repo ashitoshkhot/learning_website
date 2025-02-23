@@ -8,6 +8,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Blog from "./Pages/Blog";
 import CertificatePage from "./Pages/CertificatePage";
 import Footer from "./Pages/Footer";
+import Review from "./Pages/Review";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/certificatePage" element={<CertificatePage />}/>
+        <Route path="/review" element={<Review />} />
       </Routes>
       <Footer />
     </BrowserRouter>

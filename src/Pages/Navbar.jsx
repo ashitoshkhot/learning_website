@@ -7,16 +7,16 @@ const Navbar = () => {
       <nav>
         <img src={logo} alt="Logo" className="logo" />
         <ul>
-          <li><a href="#home"><Link to = "/">Home</Link></a></li>
+          <li><a href="#gallery"><Link to = "/">Gallery</Link></a></li>
           <li><a href="#about"><Link to = "/aboutus">About</Link></a></li>
           <li className="dropdown">
-            <a href="#courses"><Link to = "/courses">Courses</Link></a>
+            <a href="#certificate"><Link to = "/CertificatePage">Certificate</Link></a>
             <ul className="dropdown-menu">
-              <li><a href="#certificate"><Link to = "/CertificatePage">Certificate</Link></a></li>
+              <li><a href="courses"><Link to = "/courses">Courses</Link></a></li>
             </ul>
           </li>
           <li><a href="#features"><Link to = "/features">Features</Link></a></li>
-          <li><a href="#review"><Link to = "/reviews">Reviews</Link></a></li>
+          <li><a href="#review"><Link to = "/Review">Reviews</Link></a></li>
           <li><a href="#policy"><Link to = "/Privacy-policy">Policy</Link> </a></li>
           <li><Link to="/blog">Blog</Link></li>
         </ul>

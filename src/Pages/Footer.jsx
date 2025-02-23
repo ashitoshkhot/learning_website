@@ -14,13 +14,13 @@ import {Link} from 'react-router-dom';
         </div>
         <div className="footerNav">
           <ul>
-            <li><a href="#"><Link to = "/">Home</Link></a></li>
+            <li><a href="#"><Link to = "/">Gallery</Link></a></li>
             <li><a href="#"><Link to = "/aboutus">About</Link></a></li>
-            <li><a href="#"><Link to = "/certificate">Certificate</Link></a></li>
+            <li><a href="#"><Link to = "/CertificatePage">Certificate</Link></a></li>
             <li><a href="#"><Link to = "/features">Features</Link></a></li>
-            <li><a href="#"><Link to = "/reviews">Reviews</Link></a></li>
-            <li><a href="#"><Link to = "/policy">Policy</Link></a></li>
-            <li><Link to="/blog">Blog</Link></li>
+            <li><a href="#"><Link to = "/Review">Reviews</Link></a></li>
+            <li><a href="#"><Link to = "/Privacy-policy">Policy</Link></a></li>
+            <li><Link to="/Blog">Blog</Link></li>
             <li><a href="#"><Link to = "/contactus">Contact</Link></a></li>
           </ul>
         </div>
